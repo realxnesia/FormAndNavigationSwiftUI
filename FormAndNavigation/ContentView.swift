@@ -9,8 +9,23 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView{
+            Form{
+                Section(){
+                    HStack{
+                        Image(systemName: "person.fill")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                            .clipShape(Circle())
+                        
+                        VStack(alignment: .leading){
+                            Text("Dhika Aditya").font(.headline)
+                            Text("Technical Coder").font(.caption)
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
